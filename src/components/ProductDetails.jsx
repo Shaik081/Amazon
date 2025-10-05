@@ -8,7 +8,7 @@ const ProductDetails = () => {
     const [detail,setDetails] = useState({})
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/api/product/${id}`).then(res => setDetails(res.data.getById)
+        axios.get(`https://live2vendor.onrender.com/api/product/${id}`).then(res => setDetails(res.data.getById)
         )
     },[])
 
