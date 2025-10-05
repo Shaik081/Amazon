@@ -38,10 +38,9 @@ const Product = () => {
                   type="button"
                   className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50 cursor-pointer
                   hover:shadow-md
-                  hover:shadow-violet-300
-                  "
+                  hover:shadow-violet-300"
                 >
-                  Buy Now
+                  Read More
                 </button>
               </Link>
             </div>
