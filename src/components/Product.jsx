@@ -1,8 +1,16 @@
 import React, { useState } from "react";
 import products from "../../public/product.json";
+import { useEffect } from "react";
+import axios from 'axios'
+import { Link } from "react-router";
 
 const Product = () => {
-  const [items, setItems] = useState(products);
+  const [items, setItems] = useState([]);
+
+  useEffect(()=>{
+    axios.get("http://localhost:5000/api/product")
+    .then(res => setItems(res.data));
+  },[])
 
   return (
     <div className="grid grid-cols-2 md:grid-cols-3 justify-items-center gap-5 md:gap-6 p-2">
@@ -25,7 +33,7 @@ const Product = () => {
                   {item.description.slice(0, 100)}....
                 </p>
               </div>
-              <a href={item.link}>
+              <Link to={`/productDetails/${item._id}`}>
                 <button
                   type="button"
                   className="flex items-center justify-center w-full p-3 font-semibold tracking-wide rounded-md dark:bg-violet-600 dark:text-gray-50 cursor-pointer
@@ -35,7 +43,7 @@ const Product = () => {
                 >
                   Buy Now
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         );
