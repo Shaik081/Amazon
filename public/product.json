@@ -1,32 +1,27 @@
 [{
     "name": "Prohance Junior Chocolate Flavour - Pack of 200 gm Powder",
     "image": "https://m.media-amazon.com/images/I/612S3HlxXSL._SX679_.jpg",
-    "description": "Composition: Multi Vitamins With Minerals.This product will have minimum 6 monthsâ€ expiry at the time of order dispatch.",
-    "price": 499,
     "link":"https://amzn.in/d/56Z4aDc"
 },{
     "name":"Samsung Galaxy A55 5G (Awesome Navy, 8GB RAM, 256GB Storage) | AI | Metal Frame | 50 MP Main Camera (OIS) | Super HDR Video| Nightography | IP67 | Corning Gorilla Glass Victus+ | sAMOLED Display",
     "image":"https://m.media-amazon.com/images/I/71auR6K7DpL._SX425_.jpg",
-    "description":"Meet Galaxy A55 5G, the smartphone that lets you do more of what you love. With a powerful camera, long-lasting battery and immersive display, it's designed to keep up with your busy lifestyle.",
-    "price":25999,
     "link":"https://amzn.in/d/eKpQz0k"
 },
 {
     "name":"Apple iPhone 14",
     "image":"https://m.media-amazon.com/images/I/61cwywLZR-L._SX425_.jpg",
-    "description":"1 TB Storage | 6.7-inch Super Retina XDR display with ProMotion for a faster, more responsive feel | Always-On display, so you can see key information without waking your iPhone | Dynamic Island, a new way to interact with iPhone that adapts in real time to show important alerts, notifications, and activities | Pro camera system with 48MP Main camera for up to 4x greater resolution and new ways to capture photos and videos | Action mode for smooth, steady, handheld videos | Cinematic mode now in 4K Dolby Vision up to 30 fps | Crash Detection and Emergency SOS via satellite for emergencies when you're off the grid | A16 Bionic chip for lightning-fast performance | Up to 29 hours of battery life | Durable design with Ceramic Shield, tougher than any smartphone glass | Industry-leading IP68 water resistance",
-    "price":61900,
     "link":"https://amzn.in/d/dyLiilK"  
 },{
     "name":"HP 15s, 12th Gen Intel Core i3-1215U (8GB DDR4, 512GB SSD) Anti-Glare, 15.6/39.6cm,FHD, Win 11, MS Office 21, Silver, 1.69kg, fy5006tu/fd0751tu/fd0752tu, UHD Graphics, HD Camera, Dual Speakers Laptop",
-    "description":"12th Gen Intel Core i3-1215U (8MB Cache, up to 4.40 GHz) | 15.6-inch (39.6 cm) Full HD (1920 x 1080) Anti-glare Display | 8GB DDR4-3200 MHz RAM | 512GB SSD | Intel UHD Graphics | Windows 11 Home | MS Office Home & Student 2021 | Wi-Fi 5, Bluetooth 5.0 | HD Camera | Dual Speakers | Silver",
     "image":"https://m.media-amazon.com/images/I/71+gQ9gOTuL._SY450_.jpg",
-    "price":31990,
     "link":"https://amzn.in/d/c1cth98"
 },{
     "name":"SJCAM C100 1080P 30fps 30M Waterproof Magnetic Body Action Camera, Optical | WiFi 2.4 GHZ | Micro-USB Port | Landscape Mode | Portrait Mode | Webcam | Black",
     "image":"https://m.media-amazon.com/images/I/212kaBaqMoL.jpg",
-    "description":"1080P Full HD Video: The SJCAM C100 action camera supports 1080P 30fps video recording and 12MP photo shooting, which can capture every wonderful moment in your life. It is equipped with a 120-degree wide-angle lens, allowing you to record more beautiful scenery.",
-    "price":3939,
     "link":"https://amzn.to/47aoPlu"
+}   
+,{
+    "name":"Steelbird GT Dashing ISI Certified Open Face Helmet for Men and Women with Inner Sun Shield ( Dual Visor Mechanism )",
+    "image":"https://m.media-amazon.com/images/I/51D7npUYpdL._SX679_.jpg",
+    "link":"https://amzn.in/d/fSBO6PW"
 }]    

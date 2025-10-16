@@ -1,41 +1,32 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useRef, useState } from 'react'
 import { useParams } from 'react-router'
 import axios from 'axios'
+import { myContext } from '../App'
+
 
 const ProductDetails = () => {
 
     const {id} = useParams()
-    const [detail,setDetails] = useState({})
+    const {detail,setDetails,showShare,setShowShare,lapShare,setLapShare,isShare,setIsShare} = useContext(myContext)
 
     useEffect(()=>{
-        axios.get(`https://live2vendor.onrender.com/api/product/${id}`).then(res => setDetails(res.data.getById)
+        axios.get(`http://localhost:5000/api/product/${id}`).then(res => setDetails(res.data.getById)
         )
     },[])
 
+
   return (
-    <div>
-        <div className=" p-4 shadow-md dark:bg-gray-50 dark:text-gray-800 flex justify-center items-center">
-	<div className="space-y-4">
-		<div className="space-y-2">
-			<img src={detail.image} alt="" className="block w-full rounded-md h-96 object-contain  dark:bg-gray-500" />
-		</div>
-		<div className="space-y-2">
-			<a rel="noopener noreferrer" href="#" className="block">
-				<h3 className="text-xl font-semibold dark:text-violet-600">{detail.name}</h3>
-			</a>
-			<p className="leading-snug dark:text-gray-600">{detail.description}</p>
-		</div>
-        <div className='font-bold text-xl'>
-            <span><span className='text-green-600'>Price: </span>{detail.price}</span>
+  <div className='flex justify-center items-center p-2 '>
+          <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 cursor-pointer"
+          onClick={()=>window.open(detail.link)}
+          >
+          <img src={detail.image} alt="image" className="object-cover object-center w-full rounded-t-md h-72 dark:bg-gray-500" />
+          <div className="flex flex-col justify-between p-6 space-y-8">
+            <div className="space-y-2">
+              <p className="text-md md:text-xl font-semibold tracking-wide text-left hover:text-orange-400">{ detail.name?.length > 90 ? detail.name.slice(0,50) + '...' : detail.name}</p>
+            </div>
+          </div>
         </div>
-        <a href={detail.link} className='flex justify-center p-3 font-semibold mx-72 rounded-md dark:bg-violet-600 dark:text-gray-50
-                  hover:shadow-md
-                  hover:shadow-violet-300'>
-            <button className='cursor-pointer' >
-            Buy Now
-            </button></a>
-	</div>
-</div>
 </div>
   )
 }
