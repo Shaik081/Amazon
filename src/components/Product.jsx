@@ -18,7 +18,8 @@ const Product = () => {
     const fetchData = async () => {
 
       try{
-        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/product`, { params: { search: '' } })
+        const res = await axios.get(`https://live2vendor.onrender.com/api/product`, { params: { search: '' } })
+
          setItems(res.data)
          
       }
@@ -33,7 +34,7 @@ const Product = () => {
 
   return (
     <div className='grid grid-cols-2 md:grid-cols-4 justify-items-center gap-5 md:gap-6 p-2'>
-      {items.map((item, i) => {
+      {Array.isArray(items) && items.map((item, i) => {
         const isActive = isShare === item._id
         const lapIsActive = lapShare === item._id
         return (

@@ -10,7 +10,7 @@ const ProductDetails = () => {
     const {detail,setDetails,showShare,setShowShare,lapShare,setLapShare,isShare,setIsShare} = useContext(myContext)
 
     useEffect(()=>{
-        axios.get(`${import.meta.env.VITE_API_URL}/api/product/${id}`).then(res => setDetails(res.data.getById)
+        axios.get(`https://live2vendor.onrender.com/api/product/${id}`).then(res => setDetails(res.data.getById)
         )
     },[])
 
