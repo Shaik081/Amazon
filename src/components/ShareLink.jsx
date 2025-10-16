@@ -9,7 +9,7 @@ const ShareLink = ({productId,productName}) => {
 
     const [copied,setCopied] = useState(false)
 
-    const shareLink = `https://live2vendor.onrender.com/product/${productId}` 
+    const shareLink = `https://live2vendor.onrender.com/api/product/${productId}` 
 
     const handleCopy = () => {
 
