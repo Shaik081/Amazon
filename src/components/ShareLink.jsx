@@ -9,7 +9,7 @@ const ShareLink = ({productId,productName}) => {
 
     const [copied,setCopied] = useState(false)
 
-    const shareLink = `http://localhost:5000/product/${productId}` 
+    const shareLink = `${import.meta.env.VITE_API_URL}/api/product/${productId}` 
 
     const handleCopy = () => {
 

@@ -14,7 +14,7 @@ const ItemSearch = () => {
 
         try{
 
-            const res = await axios.get('http://localhost:5000/api/product',{ params : {search:query || ''}})
+            const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/product`,{ params : {search:query || ''}})
             setItems(res.data)
             
         }
