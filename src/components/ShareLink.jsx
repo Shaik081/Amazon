@@ -9,7 +9,7 @@ const ShareLink = ({productId,productName}) => {
 
     const [copied,setCopied] = useState(false)
 
-    const shareLink = `https://live2vendor.netlify.app/product/${productId}` 
+    const shareLink = `https://live2vendor.vercel.app/product/${productId}` 
 
     const handleCopy = () => {
 
