@@ -18,7 +18,7 @@ const Product = () => {
     const fetchData = async () => {
 
       try{
-        const res = await axios.get(`https://live2vendor.onrender.com/api/product`, { params: { search: '' } })
+        const res = await axios.get(`${import.meta.env.VITE_API_URL}/api/product`, { params: { search: '' } })
 
          setItems(res.data)
          
@@ -28,7 +28,9 @@ const Product = () => {
       }
 
     }
+    if(!items || items.length == 0){
     fetchData()
+    }
 
   },[setItems])
 

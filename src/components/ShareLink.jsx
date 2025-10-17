@@ -9,7 +9,7 @@ const ShareLink = ({productId,productName}) => {
 
     const [copied,setCopied] = useState(false)
 
-    const shareLink = `https://live2vendor.vercel.app/product/${productId}` 
+    const shareLink = `${import.meta.env.VITE_API_URL2}/product/${productId}` 
 
     const handleCopy = () => {
 

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import { useParams } from 'react-router'
+import { useNavigate, useParams } from 'react-router'
 import axios from 'axios'
 import { myContext } from '../App'
 
@@ -8,14 +8,24 @@ const ProductDetails = () => {
 
     const {id} = useParams()
     const {detail,setDetails} = useContext(myContext)
+    const navigate = useNavigate()
 
     useEffect(()=>{
-        axios.get(`https://live2vendor.onrender.com/api/product/${id}`).then(res => setDetails(res.data.getById)
+        axios.get(`${import.meta.env.VITE_API_URL}/api/product/${id}`).then(res => setDetails(res.data.getById)
         )
-    },[])
+    },[id,setDetails])
 
 
   return (
+  <div>
+    <div className='p-4'>
+    <button
+        onClick={() => navigate('/')}
+        className="mb-4 bg-gray-700 text-white px-4 py-2 rounded-md hover:bg-gray-800 transition-all cursor-pointer"
+      >
+        ← Back
+      </button>
+      </div> 
   <div className='flex justify-center items-center p-2 '>
           <div className="max-w-xs rounded-md shadow-md dark:bg-gray-50 dark:text-gray-800 cursor-pointer"
           onClick={()=>window.open(detail.link)}
@@ -27,6 +37,7 @@ const ProductDetails = () => {
             </div>
           </div>
         </div>
+</div>
 </div>
   )
 }
