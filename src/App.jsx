@@ -25,7 +25,7 @@ function App() {
         <NavBar/>
         <Routes>
           <Route path="/" element={<Product />}></Route>
-          <Route path="/productDetails/:id" element={<ProductDetails/>}></Route>
+          <Route path="/product/:id" element={<ProductDetails/>}></Route>
         </Routes>  
         </myContext.Provider>
       </BrowserRouter>

@@ -7,7 +7,7 @@ import { myContext } from '../App'
 const ProductDetails = () => {
 
     const {id} = useParams()
-    const {detail,setDetails,showShare,setShowShare,lapShare,setLapShare,isShare,setIsShare} = useContext(myContext)
+    const {detail,setDetails} = useContext(myContext)
 
     useEffect(()=>{
         axios.get(`https://live2vendor.onrender.com/api/product/${id}`).then(res => setDetails(res.data.getById)
