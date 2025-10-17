@@ -32,7 +32,7 @@ const ItemSearch = () => {
 
 
   return (
-    <div className="relative">
+    <div className="relative rounded-lg dark:border-2 dark:border-gray-200 border-1 border-black">
 				<span className="absolute inset-y-0 left-0 flex items-center pl-2">
 					<button type="submit" title="Search" className="p-1 focus:outline-none focus:ring">
 						<svg fill="currentColor" viewBox="0 0 512 512" className="w-4 h-4 dark:text-gray-800">

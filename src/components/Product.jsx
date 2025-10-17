@@ -12,8 +12,6 @@ const Product = () => {
   const {items,setItems,showShare,setShowShare,lapShare,setLapShare,isShare,setIsShare} = useContext(myContext)
   
 
-  
-
   useEffect(()=>{
     const fetchData = async () => {
 
@@ -40,7 +38,7 @@ const Product = () => {
         const isActive = isShare === item._id
         const lapIsActive = lapShare === item._id
         return (
-          <div key={i} className='max-w-xs rounded-md shadow-xl hover:scale-105 transition-all ease-in dark:bg-gray-50 dark:text-gray-800 cursor-pointer relative'
+          <div key={i} className='max-w-xs rounded-md shadow-xl hover:scale-105 transition-all ease-in dark:bg-gray-50 dark:text-gray-800 cursor-pointer relative dark:border-2 dark:border-gray-500 '
           >
           <img
               src={item.image}
@@ -52,7 +50,7 @@ const Product = () => {
               <div className="space-y-6"  onClick={()=>window.open(item.link)}>
                 <p className="text-md md:text-xl  font-semibold tracking-wide text-left hover:text-orange-300">
                   {item.name.length > 90
-                    ? item.name.slice(0, 50) + "..."
+                    ? item.name.slice(0, 40) + "..."
                     : item.name}
                 </p>
                
@@ -102,7 +100,7 @@ const Product = () => {
       })} 
        {isShare && <div className="bg-neutral-200 p-2 rounded-lg  fixed bottom-0 left-0 right-0 z-10 border-1 border-gray-400 sm:hidden"
            >
-            <p className="text-black text-xl border-b-1 ">Share</p>
+            <p className="text-black text-md border-b-1">Share</p>
             <ShareLink
                       productId={isShare} productName={
                         items.map(item => item._id == isShare ? item.name : "product")

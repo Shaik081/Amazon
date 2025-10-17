@@ -3,7 +3,7 @@ import ItemSearch from './ItemSearch'
 
 const NavBar = () => {
   return (
- <header className="p-4 dark:bg-gray-100 dark:text-gray-800">
+ <header className="p-4 dark:bg-gray-100 dark:text-gray-800 dark:border-b-1 dark:border-gray-300 border-b-1 border-black">
 	<div className="container flex justify-between h-16 mx-auto">
 		<a rel="noopener noreferrer" href="#" aria-label="Back to homepage" className="flex items-center p-2">
 			<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" className="w-8 h-8 dark:text-violet-600">
