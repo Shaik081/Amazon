@@ -38,7 +38,7 @@ const Product = () => {
         const isActive = isShare === item._id
         const lapIsActive = lapShare === item._id
         return (
-          <div key={i} className='max-w-xs rounded-md shadow-xl hover:scale-105 transition-all ease-in dark:bg-gray-50 dark:text-gray-800 cursor-pointer relative dark:border-2 dark:border-gray-500 '
+          <div key={i} className='max-w-xs rounded-md shadow-xl dark:bg-gray-50 dark:text-gray-800 cursor-pointer relative dark:border-2 dark:border-gray-500 '
           >
           <img
               src={item.image}
